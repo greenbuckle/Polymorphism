@@ -8,7 +8,10 @@ public class Student extends BSU_Member {
         this.enrolled_courses = new Course[6];
         this.status = "Student";
     }
-
+    Student(String name, int age){
+        this.name="Unknown";
+        this.age=0;
+    }
     //lab work: create a getter method for the enrolled_courses attribute
     public Course[] get_Enrolled_Courses(){
        return this.enrolled_courses;

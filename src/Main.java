@@ -29,18 +29,36 @@ public class Main{
 
         BSU_Member []members = new BSU_Member[10];
 
-        BSU_Member b1, b2;
+        BSU_Member b1, b2 ,b3,b4,b5,b6,b7,b8,b9,b10;
+
         //Creating an object of Student type and storing the reference in a BSU_Member tyoe variable
         b1 = new Student();
         b2 = new Instructor();
+        b3 = new Student();
+        b4 = new Instructor();
+        b5 = new Student();
+        b6 = new BSU_Member();
+        b7=new BSU_Member();
+        b8=new Student();
+        b9=new Instructor();
+        b10=new Instructor();
 
         members[0] = b1;
         members[1] = b2;//polymorphism
+        members[2] = b3;
+        members[3] = b4;
+        members[4] = b5;
+        members[5] = b6;
+        members[6] = b7;
+        members[7] = b8;
+        members[8] = b9;
+        members[9] = b10;
+
 
         System.out.println("_________________________");
-        for(int i=2;i<10;i++){
+        /*for(int i=2;i<10;i++){
             members[i] = new BSU_Member();
-        }
+        }*/
 
         System.out.println("_________________________");
 

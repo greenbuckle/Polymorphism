@@ -30,14 +30,32 @@ public class COSC113 extends Course {
         this.Students = null;
     }
 
+    public void set_syllabus(String syllabus){
+        this.syllabus = syllabus;
+    }
+
+    public String get_syllabus(){
+        return this.syllabus;
+    }
+
+    public void set_coding_language(String coding_language){
+        this.coding_language=coding_language;
+    }
+
+    public String coding_language(){
+        return this.coding_language;
+    }
+
+
     //Methods: Public, default, protected methods are inherited
     //Setters and Getters-Lab work 4- for all the attributed in COSC113
 
     //Method Overriding: Defining a method with the same method signature from the parent class
     @Override
     public void display_course_information (){
-        //Lab work- use super attributes_name inside a print statement
-        super.display_course_information();
+        //Lab work-use super attributes_name inside a print statement
+        System.out.println(super.name);
+        System.out.println(super.course_number);
         System.out.println(" Syllabus:" + this.syllabus + " language: "+ this.coding_language+
             " Instructor: " + this.i1 + " Students: " + this.Students);
     }
